@@ -1,0 +1,25 @@
+import 'package:get/get.dart';
+
+class MyController extends GetxController {
+
+
+var books = 0.obs;
+var looks = 0.obs;
+
+int get sum => books.value + looks.value;   // => is very important otherwise it will give error
+
+
+
+  increment() {
+    books.value++;
+  }
+  decrement() {
+    books.value--;
+  }
+  incrementl() {
+  looks.value++;
+    }
+  decrementl() {
+  looks.value--;
+    }
+}
